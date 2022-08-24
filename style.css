@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'Aclonica';
+    src: url(/assets/fonts/Aclonica-Regular.ttf); 
+   }
+
+.body {
+    height: 100vh;
+    position: relative;
+    background-image: url(/assets/png/home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    
+}
+
+.game-title {
+    width: 150px;
+    height: 60px; 
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: 'Aclonica';
+    cursor: pointer;
+    background-color: rgb(173, 150, 194);
+    opacity: 0.8;
+    transition: 0.3s;
+    
+}
+
+.game-title:hover {
+    opacity: 1;
+}
+
+.game-title:active {
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.game-title-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-image: url(/assets/svg/cthulhu.svg);
+    background-size: cover;
+}
+
+.visibility {
+    display: none;
+}
+
+.game-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.elders-wrapper {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.elders {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 300px;
+}
+
+.elder {
+    height: 100%;
+    width: 200px;
+    background-size: contain;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.elder:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 6px 4px rgb(75, 4, 93, 0.8);
+}
+
+.elder-first {
+    background-image: url(/assets/png/Azathoth.png);
+}
+
+.elder-second {
+    background-image: url(/assets/png/Cthulthu.png);
+}
+
+.elder-third {
+    background-image: url(/assets/png/IogSothoth.png);
+}
+
+.elder-fourth {
+    background-image: url(/assets/png/ShubNiggurath.png);
+}
+
+.elders-title {
+    font-family: 'Aclonica';
+    color: white;
+    font-size: 40px;
+    margin: 0 0 40px 0
+}
+
+.displayon {
+    display: flex;
+}
+
+.main-game {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.your-elder {
+    height: 500px;
+    width: 350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.difficulty-wrapper{
+    width: 500px;
+    height: 700px;
+    margin-left: 150px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.difficulty-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    font-family: 'Aclonica';
+    color: white;
+    font-size: 40px;
+}
+
+.difficulties {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+}
+.diff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    font-family: 'Aclonica';
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.diff:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: rgb(157, 147, 166);
+}
+
+.visibilityM {
+    visibility: hidden;
+}
+
+.your-difficulty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 500px;
+    left: 20px;
+    font-family: 'Aclonica';
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    border-radius: 5px;
+    border: 7px solid white;
+    background-color: rgb(59, 51, 51);
+}
+
+.make-deck {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px; 
+    background-color: rgb(173, 150, 194);
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: 'Aclonica';
+    cursor: pointer;
+    top: 350px;
+    left: 650px;
+    text-align: center;
+    transition: 0.1s;
+}
+
+.make-deck:hover {
+    background-color: rgb(87, 48, 124);
+    transform: scale(1.1);
+}
+
+.deck {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    height: 300px;
+    width: 230px;
+    background-image: url(/assets/png/mythicCardBackground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.stages-wrapper {
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    top: 20px;
+    left: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.st {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+}
+
+.st-title {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-family: 'Aclonica';
+    color: white;
+}
+
+.st-deck {
+    display: flex;
+    justify-content: space-around;
+}
+
+.st-card {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: black;
+}
+
+.first-stage-green {
+    background-color: green;
+}
+
+.second-stage-green {
+    background-color: green;
+}
+
+.third-stage-green {
+    background-color: green;
+}
+
+.first-stage-brown {
+    background-color: burlywood;
+}
+
+.second-stage-brown {
+    background-color: burlywood;
+}
+
+.third-stage-brown {
+    background-color: burlywood;
+}
+
+.first-stage-blue {
+    background-color: blue;
+}
+
+.second-stage-blue {
+    background-color: blue;
+}
+
+.third-stage-blue {
+    background-color: blue;
+}
+
+.my-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 350px;
+    left: 135px;
+    height: 300px;
+    width: 230px;
+    cursor: pointer;
+    border: 5px solid red;
+    font-size: 26px;
+    font-family: 'Aclonica';
+    color: red;
+    text-align: center;
+}
