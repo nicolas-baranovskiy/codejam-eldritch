@@ -125,6 +125,7 @@ justify-content: center;
 }
 
 .main-game {
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -219,7 +220,7 @@ justify-content: center;
     font-family: 'Aclonica';
     cursor: pointer;
     top: 350px;
-    left: 650px;
+    left: 700px;
     text-align: center;
     transition: 0.1s;
 }
@@ -328,10 +329,10 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 350px;
-    left: 135px;
+    top: 390px;
+    left: 720px;
     height: 300px;
-    width: 230px;
+    width: 200px;
     cursor: pointer;
     border: 5px solid red;
     font-size: 26px;
@@ -344,4 +345,52 @@ justify-content: center;
 
 .no-borders {
     border:none;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 510px;
+    right: 20px;
+    width: 150px;
+    height: 60px; 
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: 'Aclonica';
+    cursor: pointer;
+    background-color: rgb(173, 150, 194);
+    opacity: 0.8;
+    transition: 0.3s;
+    text-align: center;
+    visibility: hidden;
+}
+
+.start:hover {
+    opacity: 1;
+}
+
+.start:active {
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.active-stage{
+    color: rgb(255, 145, 0);
+}
+
+.end {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    height: 300px;
+    width: 230px;
+    color: gold;
+    font-size: 42px;
+    font-family: 'Aclonica';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

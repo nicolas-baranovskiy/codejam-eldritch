@@ -23,6 +23,12 @@ const deck = document.querySelector('.deck');
 
 const stagesWrapper = document.querySelector('.stages-wrapper');
 const myCard = document.querySelector('.my-card');
+const end = document.querySelector('.end');
+const start = document.querySelector('.start');
+
+const firstStageTitle = document.querySelector('.first-stage-title');
+const secondStageTitle = document.querySelector('.second-stage-title');
+const thirdStageTitle = document.querySelector('.third-stage-title');
 
 //трекер первой стадии
 const firstStageGreen = document.querySelector('.first-stage-green');
@@ -882,22 +888,37 @@ function makeSecondStageDeck () {
             myCard.textContent = '';
             if(finalDeck[finalDeck.length - 1].color === 'green' &&  Number(firstStageGreen.textContent) !=0) {
                 firstStageGreen.textContent = Number(firstStageGreen.textContent) - 1;
+                firstStageTitle.classList.add('active-stage');
             } else if (finalDeck[finalDeck.length - 1].color === 'brown' &&  Number(firstStageBrown.textContent) !=0) {
                 firstStageBrown.textContent = Number(firstStageBrown.textContent) - 1;
+                firstStageTitle.classList.add('active-stage');
             } else if (finalDeck[finalDeck.length - 1].color === 'blue' &&  Number(firstStageBlue.textContent) !=0) {
                 firstStageBlue.textContent = Number(firstStageBlue.textContent) - 1;
+                firstStageTitle.classList.add('active-stage');
             } else if (finalDeck[finalDeck.length - 1].color === 'green' &&  Number(secondStageGreen.textContent) !=0) {
                 secondStageGreen.textContent = Number(secondStageGreen.textContent) - 1;
+                firstStageTitle.classList.remove('active-stage');
+                secondStageTitle.classList.add('active-stage');
             } else if (finalDeck[finalDeck.length - 1].color === 'brown' &&  Number(secondStageBrown.textContent) !=0) {
                 secondStageBrown.textContent = Number(secondStageBrown.textContent) - 1;
+                firstStageTitle.classList.remove('active-stage');
+                secondStageTitle.classList.add('active-stage');
             } else if (finalDeck[finalDeck.length - 1].color === 'blue' &&  Number(secondStageBlue.textContent) !=0) {
                 secondStageBlue.textContent = Number(secondStageBlue.textContent) - 1;
+                firstStageTitle.classList.remove('active-stage');
+                secondStageTitle.classList.add('active-stage');
             } else if (finalDeck[finalDeck.length - 1].color === 'green' &&  Number(thirdStageGreen.textContent) !=0) {
                 thirdStageGreen.textContent = Number(thirdStageGreen.textContent) - 1;
+                secondStageTitle.classList.remove('active-stage');
+                thirdStageTitle.classList.add('active-stage');
             } else if (finalDeck[finalDeck.length - 1].color === 'brown' &&  Number(thirdStageBrown.textContent) !=0) {
                 thirdStageBrown.textContent = Number(thirdStageBrown.textContent) - 1;
+                secondStageTitle.classList.remove('active-stage');
+                thirdStageTitle.classList.add('active-stage');
             } else if (finalDeck[finalDeck.length - 1].color === 'blue' &&  Number(thirdStageBlue.textContent) !=0) {
                 thirdStageBlue.textContent = Number(thirdStageBlue.textContent) - 1;
+                secondStageTitle.classList.remove('active-stage');
+                thirdStageTitle.classList.add('active-stage');
             }
 
             if (finalDeck.length > 1) {
@@ -905,5 +926,8 @@ function makeSecondStageDeck () {
             } else if (finalDeck.length == 1) {
                 finalDeck.pop()
                 deck.classList.add('visibilityM');
+                thirdStageTitle.classList.remove('active-stage');
+                end.classList.remove('visibilityM');
             }
         })
+        
