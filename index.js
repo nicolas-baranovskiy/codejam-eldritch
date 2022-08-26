@@ -362,7 +362,7 @@ let finalDeck = [];
 //выбор Древнего
 elderOne.addEventListener('click', () => {
     eldersWrapper.classList.remove('displayon');
-    yourElder.style.backgroundImage = `url('/assets/png/Azathoth.png')`
+    yourElder.style.backgroundImage = `url('assets/png/Azathoth.png')`
     mainGame.classList.remove('visibilityM');
     firstStageGreen.textContent = '1';
     firstStageBlue.textContent = '1';
@@ -391,7 +391,7 @@ elderOne.addEventListener('click', () => {
 
 elderTwo.addEventListener('click', () => {
     eldersWrapper.classList.remove('displayon');
-    yourElder.style.backgroundImage = `url('/assets/png/Cthulthu.png')`
+    yourElder.style.backgroundImage = `url('assets/png/Cthulthu.png')`
     mainGame.classList.remove('visibilityM');
     firstStageGreen.textContent = '0';
     firstStageBlue.textContent = '2';
@@ -420,7 +420,7 @@ elderTwo.addEventListener('click', () => {
 
 elderThree.addEventListener('click', () => {
     eldersWrapper.classList.remove('displayon');
-    yourElder.style.backgroundImage = `url('/assets/png/IogSothoth.png')`
+    yourElder.style.backgroundImage = `url('assets/png/IogSothoth.png')`
     mainGame.classList.remove('visibilityM');
     firstStageGreen.textContent = '0';
     firstStageBlue.textContent = '1';
@@ -449,7 +449,7 @@ elderThree.addEventListener('click', () => {
 
 elderFour.addEventListener('click', () => {
     eldersWrapper.classList.remove('displayon');
-    yourElder.style.backgroundImage = `url('/assets/png/ShubNiggurath.png')`
+    yourElder.style.backgroundImage = `url('assets/png/ShubNiggurath.png')`
     mainGame.classList.remove('visibilityM');
     firstStageGreen.textContent = '1';
     firstStageBlue.textContent = '1';
@@ -883,7 +883,7 @@ function makeSecondStageDeck () {
         //взять карту из коллоды
 
         deck.addEventListener('click', () => {
-            myCard.style.backgroundImage = `url('/assets/png/${finalDeck[finalDeck.length - 1].id}.png')`
+            myCard.style.backgroundImage = `url('assets/png/${finalDeck[finalDeck.length - 1].id}.png')`
             myCard.classList.add('no-borders');
             myCard.textContent = '';
             if(finalDeck[finalDeck.length - 1].color === 'green' &&  Number(firstStageGreen.textContent) !=0) {
