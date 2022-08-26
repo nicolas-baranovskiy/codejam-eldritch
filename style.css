@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Aclonica';
-    src: url('../assets/fonts/Aclonica-Regular.ttf'); 
+    src: url('..assets/fonts/Aclonica-Regular.ttf'); 
    }
 
 .body {
     height: 100vh;
     position: relative;
-    background-image: url('../assets/png/home.png');
+    background-image: url('..assets/png/home.png');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -52,7 +52,7 @@
     height: 100px;
     margin-bottom: 10px;
     margin-right: 10px;
-    background-image: url('../assets/svg/cthulhu.svg');
+    background-image: url('..assets/svg/cthulhu.svg');
     background-size: cover;
 }
 
@@ -98,19 +98,19 @@ justify-content: center;
 }
 
 .elder-first {
-    background-image: url('../assets/png/Azathoth.png');
+    background-image: url('..assets/png/Azathoth.png');
 }
 
 .elder-second {
-    background-image: url('../assets/png/Cthulthu.png');
+    background-image: url('..assets/png/Cthulthu.png');
 }
 
 .elder-third {
-    background-image: url('../assets/png/IogSothoth.png');
+    background-image: url('..assets/png/IogSothoth.png');
 }
 
 .elder-fourth {
-    background-image: url('../assets/png/ShubNiggurath.png');
+    background-image: url('..assets/png/ShubNiggurath.png');
 }
 
 .elders-title {
@@ -235,7 +235,7 @@ justify-content: center;
     position: absolute;
     height: 300px;
     width: 230px;
-    background-image: url('../assets/png/mythicCardBackground.png');
+    background-image: url('..assets/png/mythicCardBackground.png');
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
