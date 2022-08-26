@@ -338,4 +338,10 @@ justify-content: center;
     font-family: 'Aclonica';
     color: red;
     text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.no-borders {
+    border:none;
 }
