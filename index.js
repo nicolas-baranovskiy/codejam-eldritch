@@ -487,13 +487,6 @@ veryLow.addEventListener('click', () => {
     gettingCardsforVeryLowBrown ()
     gettingCardsforVeryLowBlue ()
 
-    console.log(cardsDataGreenForDifficulty)
-    console.log(cardsDataBrownForDifficulty)
-
-    console.log(cardsDataBlueForDifficulty)
-
-
-   
 });
 
 low.addEventListener('click', () => {
@@ -563,7 +556,6 @@ makeDeck.addEventListener('click', () => {
     makeFinalThirdDeck()
 
     finalDeck = finalThirdStageDeck.concat(finalSecondStageDeck, finalFirstStageDeck);
-
 
     console.log(finalDeck);
 
@@ -931,3 +923,4 @@ function makeSecondStageDeck () {
             }
         })
         
+        console.log("Самооценка выполненной работы CodeJam:\n1. На выбор предоставляется минимум одна карта древнего (максимум 4)(+20)\n2. На выбор предоставляется несколько уровней сложности (максимум 5) (+25)\n3. Карты замешиваются согласно правилам игры (+40)\n4. Есть трекер текущего состояния колоды (+20)\nИтог: все требования к работе выполнены, поэтому оцениваю её в 105 баллов.")
